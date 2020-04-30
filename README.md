@@ -6,7 +6,7 @@ Power NodeMCU with 5 Volts with MicroUSB
 
 GND Pin on HC-SR04 -> GND Pin on NodeMCU
 
-VCC Pin on HC-SR04 Sensor -> VIN Pin on NodeMCU
+VCC Pin on HC-SR04 -> VIN Pin on NodeMCU
 
 Trigger Pin on HC-SR04 -> D1 Pin on NodeMCU
 
