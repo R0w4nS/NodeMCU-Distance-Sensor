@@ -1,7 +1,8 @@
 # NodeMCU Distance Sensor
 
-Power NoceMCU with 5 Volts with MicroUSB
+## Setup
 
+Power NoceMCU with 5 Volts with MicroUSB
 
 Connect GND Pin on HC-SR04 Sensor to GND Pin on NodeMCU
 
