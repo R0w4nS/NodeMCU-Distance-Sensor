@@ -39,5 +39,6 @@ void loop() {
   Serial.print("Distance: ");
   Serial.println(distance);
   Blynk.virtualWrite(V1, distance);
+  delay(200);
   Blynk.run();
 }
