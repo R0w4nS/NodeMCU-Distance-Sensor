@@ -21,7 +21,7 @@ int distance;
 int newval;
 
 void setup() {
-  Serial.begin (9600);
+  Serial.begin(9600);
   Blynk.begin(auth, ssid, pass);
   pinMode(trigPin, OUTPUT); //Initialise trigPin as an output
   pinMode(echoPin, INPUT); //Initialise echoPin as an input
@@ -35,7 +35,9 @@ void loop() {
   delayMicroseconds(10); 
   digitalWrite(trigPin, LOW);
   duration = pulseIn(echoPin, HIGH);
-  distance= duration*0.034/2;
+  distance = duration*0.034/2; //cm
+  //distance = duration*0.0135/2; //inches
+  
   Serial.print("Distance: ");
   Serial.println(distance);
   Blynk.virtualWrite(V1, distance);
